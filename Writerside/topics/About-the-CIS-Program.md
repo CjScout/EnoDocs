@@ -1,3 +1,3 @@
 # About the CIS Program
 
-Start typing here...
+Some random text wto test my commit because idk if it works 
