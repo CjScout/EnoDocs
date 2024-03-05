@@ -14,4 +14,8 @@
         <description>Created after removal of "Test" from CIS Documentation</description>
         <accepts>Test.html</accepts>
     </rule>
+    <rule id="7f064925">
+        <description>Created after removal of "Work PCs" from CIS Documentation</description>
+        <accepts>Work-PCs.html</accepts>
+    </rule>
 </rules>
