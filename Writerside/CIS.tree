@@ -11,6 +11,10 @@
     </toc-element>
     <toc-element topic="Guides.md"/>
     <toc-element topic="Network-Topology.md"/>
-    <toc-element topic="Servers.md"/>
+    <toc-element topic="Servers.md">
+        <toc-element topic="Cyberdyne.md"/>
+        <toc-element topic="Cloud9.md"/>
+        <toc-element topic="Hampstead.md"/>
+    </toc-element>
     <toc-element topic="Work-PCs.md"/>
 </instance-profile>
