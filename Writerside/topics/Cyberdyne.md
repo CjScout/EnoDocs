@@ -1,7 +1,5 @@
 # Cyberdyne
-
-Cyberdyne is the core of the CIS class. It runs Windows Server 2019, and provides Domain Services to the entire class. 
-
+Cyberdyne is the core of the CIS class. It runs Windows Server 2019, and provides Domain Services to the entire class.
 ## User Accounts
 All user accounts are stored on Cyberdyne, and allows a student to log in to their account on any computer enrolled in the domain.
 ## DNS
