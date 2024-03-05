@@ -8,4 +8,8 @@
 
     <toc-element topic="starter-topic.md"/>
     <toc-element topic="About-the-CIS-Program.md"/>
+    <toc-element topic="WorkPCs.md">
+        <toc-element topic="specifications.md"/>
+<!--        <toc-element topic="issues.md"/> Not Implemented Yet-->
+    </toc-element>
 </instance-profile>
