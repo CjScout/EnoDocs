@@ -8,8 +8,18 @@
 
     <toc-element topic="starter-topic.md"/>
     <toc-element topic="About-the-CIS-Program.md"/>
-    <toc-element topic="Guides.md"/>
-    <toc-element topic="Network-Topology.md"/>
+    <toc-element topic="Guides.md">
+        <toc-element topic="Virtualization.md">
+            <toc-element topic="Proxmox-VM.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="Network-Topology.md">
+        <toc-element topic="General-Overview.md"/>
+        <toc-element topic="Detailed-Network-Explaination.md"/>
+        <toc-element topic="Comcast-Modem.md"/>
+        <toc-element topic="Firewall.md"/>
+        <toc-element topic="Layer-3-Switch.md"/>
+    </toc-element>
     <toc-element topic="Servers.md">
         <toc-element topic="Cyberdyne.md"/>
         <toc-element topic="Cloud9.md"/>

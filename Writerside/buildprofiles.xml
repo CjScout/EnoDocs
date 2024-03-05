@@ -3,4 +3,9 @@
         <primary-color>ruby</primary-color>
 
     </variables>
+    <build-profile instance="CIS">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
 </buildprofiles>

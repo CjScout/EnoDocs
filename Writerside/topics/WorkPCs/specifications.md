@@ -21,7 +21,6 @@ The first 4 partitions are for Windows being EFI, System Reserved, and the NTFS 
 Below is a list of the pre-installed software when the drive is cloned 
 
 **Window Programs Installed**
-- Ninite Script:
 - Chrome
 - VLC Media Player
 - Steam
@@ -30,10 +29,7 @@ Below is a list of the pre-installed software when the drive is cloned
 - 7-Zip
 - Notepad++
 - PuTTY
-
-**Microsoft App Store**
-- Python 3.10
-- Other:
+- Python
 - Anki
 - Boson Subnet Calculator
 - VirtualBox
@@ -55,6 +51,3 @@ Below is a list of the pre-installed software when the drive is cloned
 **Linux**
 - Packet Tracer 8.2
 - Python
-
-
-

@@ -1,3 +1,3 @@
 # Guides
 
-Start typing here...
+A collection of guides for labs
