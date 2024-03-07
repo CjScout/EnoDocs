@@ -1,3 +1,3 @@
 # Firewall
 
-Our firewall is a Netgate XXX. 
+Our firewall is a Netgate 1100.
