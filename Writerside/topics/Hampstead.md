@@ -7,7 +7,7 @@ Instead of downloading a game from the internet over and over, if it is cached, 
 
 Anything not Gaming related is forwarded to [Cyberdyne](Cyberdyne.md).
 ## Uptime
-The uptime monitor runs UptimeKuma, a docker based monitoring system. It sends messages to room admins when services die, and provides a webview at (https://uptime.professoreno.com)[https://uptime.professoreno.com/status/main].
+The uptime monitor runs UptimeKuma, a docker based monitoring system. It sends messages to room admins when services die, and provides a webview at [https://uptime.professoreno.com](https://uptime.professoreno.com/status/main).
 ## Webserver
 NGINX is configured to host [professoreno.com](https://professoreno.com) on Port 81. [docs.professoreno.com](https://docs.professoreno.com) is hosted on pot 82. These are tunneled through cloudflare to provide access outside the local network.
 ## Network Share
