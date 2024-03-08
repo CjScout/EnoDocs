@@ -5,7 +5,7 @@ Our proxmox server is considered a bare-metal VM server, the hypervisor runs dir
 ## Creating a VM
 
 ### Accessing Proxmox
-1. Navigate to [https://192.168.30.8/](https://192.168.30.8) you MUST include https://
+1. Navigate to [https://192.168.10.8/](https://192.168.10.8) you MUST include https://
 
 2. Use the following login credentials
 
