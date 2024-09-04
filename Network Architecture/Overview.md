@@ -35,7 +35,7 @@ The room is divided into VLANs, designed to separate class and lab traffic and p
 | Security  | 40      | 192.168.40.1    | N/A               | 1.1.1.1      |
 There are additional addresses used for backend device communication:
 
-| Device 1                     | IP           | Device 2                                | IP             | Purposed              |
+| Device 1                     | IP           | Device 2                                | IP             | Purpose               |
 | ---------------------------- | ------------ | --------------------------------------- | -------------- | --------------------- |
 | [[Comcast Modem]]            | 10.1.10.1    | [[Netgate 1100 pfSense Firewall]]       | 10.1.10.35     | Link to outside modem |
 | [[Mikrotik CRS309-1G-8S+IN]] | 192.168.1.10 | [[Netgate 1100 pfSense Firewall]]       | 192.168.1.1    | Link to firewall      |
