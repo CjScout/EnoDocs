@@ -5,6 +5,6 @@
 
 # Useful filters
 
-| Filter by | command |
-| --------- | ------- |
-|           |         |
+| Filter by  | command                  |
+| ---------- | ------------------------ |
+| IP Address | ip.addr==XXX.XXX.XXX.XXX |
