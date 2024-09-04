@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Servers/Cyberdyne.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Servers/Cyberdyne.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Servers/Cyberdyne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Servers/Cyberdyne.md"
               }
             }
           },
@@ -202,11 +202,11 @@
   },
   "active": "2fcec540a8a923b0",
   "lastOpenFiles": [
-    "Servers/Cyberdyne.md",
     "index.md",
+    "Network Architecture/Network Overview.md",
+    "Servers/Cyberdyne.md",
     "PCs/Work PCs/General.md",
     "PCs/Work PCs/Programs.md",
-    "Network Architecture/Network Overview.md",
     "PCs/Show PCs/Sleeper.md",
     "PCs/Show PCs/Show PC.md",
     "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.md",
