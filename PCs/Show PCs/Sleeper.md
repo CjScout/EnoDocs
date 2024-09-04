@@ -1,3 +1,7 @@
+---
+Status: In Progress
+---
+
 # Sleeper
 The Sleeper is the most expensive computer in the CIS lab. Which the show PC is more intersting to look at, the sleeper has significantly more powerful hardware. 
 ## Specs

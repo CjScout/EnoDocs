@@ -1,3 +1,7 @@
+---
+Status: In Progress
+---
+
 # Show PC
 
 The Show PC is the eye catching computer in the room.  
