@@ -7,7 +7,8 @@ The core networking infrastructure is made up of the following devices
 
 ## Architecture
 ### Hardware
-The [[Mikrotik CRS309-1G-8S+IN]] functions as our core networking switch. It 
+The [[Mikrotik CRS309-1G-8S+IN]] functions as our core networking switch. It is capable of both layer 2 and layer 3 routing. See [here](/Network%20Architecture/Equipment/Mikrotik%20%CRS309-1G-8S+IN) for exact configuration details.
+
 
 ### IP Scheme
 The room is divided into VLANs, designed to separate class and lab traffic and prevent downtime for the [Work PCs](/PCs/Work%20PCs/General%20Information). The VLANs and IP address structure are below.
