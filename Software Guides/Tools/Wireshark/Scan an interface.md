@@ -2,4 +2,4 @@
 2. Double click your network interface, this is typically wlan0 or eth0![[Pasted image 20240904091942.png]]
 3. This will bring up the following page, which shows a list of packets sent of the network![[Pasted image 20240904092039.png]]
 4. Select a packet to see more information![[Pasted image 20240904092157.png]]
-5. Here you can see both the exact hexadeximal data sent 
+5. Here you can see both the exact hexadecimal data sent in the packet, and information such as protocol and port![[Pasted image 20240904092458.png]]
