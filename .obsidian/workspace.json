@@ -202,20 +202,21 @@
   },
   "active": "2fcec540a8a923b0",
   "lastOpenFiles": [
-    "Network Architecture/Network Overview.md",
+    "Servers/Cyberdyne.md",
     "index.md",
+    "PCs/Work PCs/General.md",
+    "PCs/Work PCs/Programs.md",
+    "Network Architecture/Network Overview.md",
     "PCs/Show PCs/Sleeper.md",
     "PCs/Show PCs/Show PC.md",
     "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.md",
     "Servers/Kronos.md",
     "Servers/Hampstead.md",
-    "Servers/Cyberdyne.md",
     "Servers/Cloud9.md",
     "PCs/Work PCs/General Information.md",
     "Network Architecture/Equipment/TRENDnet TEG-3102WS.md",
     "Network Architecture/Equipment/Netgate 1100 pfSense Firewall.md",
     "Network Architecture/Equipment/Cisco WS-C3650-48FQ-S Catalyst 3650.md",
-    "PCs/Work PCs/Programs.md",
     "Test.md",
     "Introduction.md",
     "Network Architecture/Equipment/Comcast Modem.md",
@@ -237,7 +238,6 @@
     "Classes",
     "2024-09-01.md",
     "Untitled.canvas",
-    "PCs",
-    "Untitled/Chemistry Guides.md"
+    "PCs"
   ]
 }
