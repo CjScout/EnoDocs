@@ -1,5 +1,6 @@
 ---
 Status: In Progress
+Summary: Detailed walk-through of the network architecture
 ---
 
 # Networking Overview

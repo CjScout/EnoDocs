@@ -1,5 +1,5 @@
 ---
 Status: To Do
-Summary: Room security server
+Summary: Overview of room security server
 ---
 
