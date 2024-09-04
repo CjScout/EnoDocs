@@ -1,5 +1,6 @@
 ---
 Status: In Progress
+Summary: Overview of rainbow PC
 ---
 
 # Show PC

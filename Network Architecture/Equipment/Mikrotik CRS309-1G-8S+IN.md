@@ -1,1 +1,5 @@
+---
+Status: To Do
+---
+
 The [[Mikrotik CRS309-1G-8S+IN]] functions as our core networking switch. It is capable of both layer 2 and layer 3 routing.

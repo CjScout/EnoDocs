@@ -2,7 +2,17 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {},
+      "fieldConfig": {
+        "Status": {
+          "options": [
+            "To Do",
+            "In Progress",
+            "Stuck",
+            "Needs Review",
+            "Up to date"
+          ]
+        }
+      },
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
@@ -37,6 +47,27 @@
           "id": "7e41cde8-2994-49d4-8a13-dd5191dfa95d",
           "name": "Table",
           "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "Status",
+            "includeFields": [
+              "Summary"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "1c99b6a1-29d6-4992-a366-9bf8657717df",
+          "name": "Board",
+          "type": "board"
         }
       ],
       "id": "1d23322e-d656-4c69-ae81-a4ffa4fc4ab7",
