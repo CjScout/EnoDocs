@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3da5bcfb35ca211e",
+        "id": "b58d419da509f311",
         "type": "tabs",
         "children": [
           {
-            "id": "3d65270d14204e06",
+            "id": "2fcec540a8a923b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Architecture/Overview.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Servers/Kronos.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Servers/Kronos.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Servers/Kronos.md"
+                "file": "index.md"
               }
             }
           },
@@ -191,63 +191,33 @@
           }
         ],
         "direction": "vertical",
-        "x": 1270,
-        "y": 896,
-        "width": 900,
-        "height": 500,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "ae43ecf60f1d41aa",
-        "type": "window",
-        "children": [
-          {
-            "id": "de9d57b0bc2ba454",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b57191cb27fb33b4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Servers/Kronos.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1270,
-        "y": 896,
-        "width": 900,
-        "height": 500,
+        "x": 806,
+        "y": 523,
+        "width": 901,
+        "height": 501,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "b57191cb27fb33b4",
+  "active": "2fcec540a8a923b0",
   "lastOpenFiles": [
+    "Network Architecture/Network Overview.md",
+    "index.md",
+    "PCs/Show PCs/Sleeper.md",
+    "PCs/Show PCs/Show PC.md",
+    "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.md",
+    "Servers/Kronos.md",
     "Servers/Hampstead.md",
     "Servers/Cyberdyne.md",
     "Servers/Cloud9.md",
     "PCs/Work PCs/General Information.md",
-    "PCs/Show PCs/Sleeper.md",
-    "PCs/Show PCs/Show PC.md",
-    "Network Architecture/Overview.md",
     "Network Architecture/Equipment/TRENDnet TEG-3102WS.md",
     "Network Architecture/Equipment/Netgate 1100 pfSense Firewall.md",
-    "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.md",
     "Network Architecture/Equipment/Cisco WS-C3650-48FQ-S Catalyst 3650.md",
     "PCs/Work PCs/Programs.md",
     "Test.md",
     "Introduction.md",
-    "Servers/Kronos.md",
     "Network Architecture/Equipment/Comcast Modem.md",
     "\"/PCs/Work.md",
     "General.md",
