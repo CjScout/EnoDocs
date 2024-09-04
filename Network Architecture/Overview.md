@@ -9,8 +9,11 @@ The core networking infrastructure is made up of the following devices
 ### Hardware
 The [[Mikrotik CRS309-1G-8S+IN]] functions as our core networking switch. It is capable of both layer 2 and layer 3 routing. See [here](/Network%20Architecture/Equipment/Mikrotik%20CRS309-1G-8S+IN) for exact configuration details.
 
-The [[Mikrotik CRS309-1G-8S+IN]] has 8 SFP+ 10G ports. Ports 1-3 are e
+The [[Mikrotik CRS309-1G-8S+IN]] has 8 SFP+ 10G ports. Ports 1-3 are each linked to a  [[TRENDnet TEG-3102WS]].
 
+Each [[TRENDnet TEG-3102WS]] has 8 2.5G Ethernet ports, these are connected to the patch panel where the Work PC's Ethernet is terminated.
+
+Port 4 is used for the high speed storage
 
 ### IP Scheme
 The room is divided into VLANs, designed to separate class and lab traffic and prevent downtime for the [Work PCs](/PCs/Work%20PCs/General%20Information). The VLANs and IP address structure are below.
