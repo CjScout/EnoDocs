@@ -4,6 +4,7 @@
 2. Nmap commands look like this: ``nmap args XXX.XXX.XXX.XXX/XX``
 3. To scan an individual host, use ``XXX.XXX.XXX.XX``
 4. To scan a range, use ``XXX.XXX.XXX.XXX/XX`` where ``/XX`` is the relevant subnet mask.
+5. Scan outputs will look like this:![[Pasted image 20240904100100.png]]
 
 ## Useful arguments
 
