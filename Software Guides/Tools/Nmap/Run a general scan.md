@@ -7,6 +7,8 @@
 
 ## Useful arguments
 
-| Argument | Purpose |
-| -------- | ------- |
-| -v       |         |
+| Argument             | Purpose                                |
+| -------------------- | -------------------------------------- |
+| -v or -vv            | Be verbose with logs (or very verbose) |
+| -p * value or range* | Scan a specific port or ports          |
+|                      |                                        |
