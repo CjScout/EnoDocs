@@ -43,7 +43,7 @@
   "defaultFileIcon": "lucide//file",
   "defaultFolderIcon": "lucide//folder",
   "defaultMediaIcon": "lucide//file-image",
-  "exportPath": "/home/connor/Documents/EnoDocs Export",
+  "exportPath": "/home/connor/Documents/Eno Docs/build",
   "filesToExport": [
     [
       "all"

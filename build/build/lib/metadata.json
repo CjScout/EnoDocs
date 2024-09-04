@@ -1,0 +1,246 @@
+{
+  "vaultName": "Obsidian Vault",
+  "lastExport": 1725411124286,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "Network Architecture/Equipment/Cisco WS-C3650-48FQ-S Catalyst 3650.md",
+    "Network Architecture/Equipment/Comcast Modem.md",
+    "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.md",
+    "Network Architecture/Equipment/Netgate 1100 pfSense Firewall.md",
+    "Network Architecture/Equipment/TRENDnet TEG-3102WS.md",
+    "Network Architecture/Overview.md",
+    "PCs/Show PCs/Show PC.md",
+    "PCs/Show PCs/Sleeper.md",
+    "PCs/Work PCs/General Information.md",
+    "PCs/Work PCs/Programs.md",
+    "Servers/Cloud9.md",
+    "Servers/Cyberdyne.md",
+    "Servers/Hampstead.md",
+    "Servers/Kronos.md",
+    "Introduction.md",
+    "Test.md",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/3d6c1bdc4d87cde4de67.svg"
+  ],
+  "mainDependencies": [
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/3d6c1bdc4d87cde4de67.svg"
+  ],
+  "fileInfo": {
+    "Network Architecture/Equipment/Cisco WS-C3650-48FQ-S Catalyst 3650.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 0,
+      "exportedPath": "Network Architecture/Equipment/Cisco WS-C3650-48FQ-S Catalyst 3650.html",
+      "dependencies": []
+    },
+    "Network Architecture/Equipment/Comcast Modem.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 0,
+      "exportedPath": "Network Architecture/Equipment/Comcast Modem.html",
+      "dependencies": []
+    },
+    "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 0,
+      "exportedPath": "Network Architecture/Equipment/Mikrotik CRS309-1G-8S+IN.html",
+      "dependencies": []
+    },
+    "Network Architecture/Equipment/Netgate 1100 pfSense Firewall.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 0,
+      "exportedPath": "Network Architecture/Equipment/Netgate 1100 pfSense Firewall.html",
+      "dependencies": []
+    },
+    "Network Architecture/Equipment/TRENDnet TEG-3102WS.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 8,
+      "exportedPath": "Network Architecture/Equipment/TRENDnet TEG-3102WS.html",
+      "dependencies": []
+    },
+    "Network Architecture/Overview.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 1593,
+      "exportedPath": "Network Architecture/Overview.html",
+      "dependencies": []
+    },
+    "PCs/Show PCs/Show PC.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 348,
+      "exportedPath": "PCs/Show PCs/Show PC.html",
+      "dependencies": []
+    },
+    "PCs/Show PCs/Sleeper.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 336,
+      "exportedPath": "PCs/Show PCs/Sleeper.html",
+      "dependencies": []
+    },
+    "PCs/Work PCs/General Information.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 570,
+      "exportedPath": "PCs/Work PCs/General Information.html",
+      "dependencies": []
+    },
+    "PCs/Work PCs/Programs.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 1949,
+      "exportedPath": "PCs/Work PCs/Programs.html",
+      "dependencies": []
+    },
+    "Servers/Cloud9.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 23,
+      "exportedPath": "Servers/Cloud9.html",
+      "dependencies": []
+    },
+    "Servers/Cyberdyne.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 107,
+      "exportedPath": "Servers/Cyberdyne.html",
+      "dependencies": []
+    },
+    "Servers/Hampstead.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 23,
+      "exportedPath": "Servers/Hampstead.html",
+      "dependencies": []
+    },
+    "Servers/Kronos.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 23,
+      "exportedPath": "Servers/Kronos.html",
+      "dependencies": []
+    },
+    "Introduction.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 23,
+      "exportedPath": "Introduction.html",
+      "dependencies": []
+    },
+    "Test.md": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 23,
+      "exportedPath": "Test.html",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/media/3d6c1bdc4d87cde4de67.svg": {
+      "modifiedTime": 1725411124286,
+      "sourceSize": 279,
+      "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
+      "dependencies": []
+    }
+  }
+}
