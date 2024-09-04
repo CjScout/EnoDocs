@@ -21,7 +21,9 @@ Port 6 is linked to the [[Cisco WS-C3650-48FQ-S Catalyst 3650]], a separate laye
 
 Port 7 is configured as a mirror port, and is used for traffic monitoring by the security onion server.
 
-Port 8 is our upstream connection, connected to the [[Netgate 1100 pfSense Firewall]]
+Port 8 is our upstream connection, it is linked to the [[Netgate 1100 pfSense Firewall]].
+
+The single ethernet port is used for management by the WinBox utility.
 ### IP Scheme
 The room is divided into VLANs, designed to separate class and lab traffic and prevent downtime for the [Work PCs](/PCs/Work%20PCs/General%20Information). The VLANs and IP address structure are below.
 
@@ -33,8 +35,9 @@ The room is divided into VLANs, designed to separate class and lab traffic and p
 | Security  | 40      | 192.168.40.1    | N/A               | 1.1.1.1      |
 There are additional addresses used for backend device communication:
 
-| Device 1                     | IP           | Device 2                                | IP          |
-| ---------------------------- | ------------ | --------------------------------------- | ----------- |
-| [[Comcast Modem]]            | 10.1.10.1    | [[Netgate 1100 pfSense Firewall]]       | 10.1.10.35  |
-| [[Mikrotik CRS309-1G-8S+IN]] | 192.168.1.10 | [[Netgate 1100 pfSense Firewall]]       | 192.168.1.1 |
-| [[Mikrotik CRS309-1G-8S+IN]] | 192.168.5.1  | [[Cisco WS-C3650-48FQ-S Catalyst 3650]] | 192.168.5.2 |
+| Device 1                     | IP           | Device 2                                | IP             | Purposed              |
+| ---------------------------- | ------------ | --------------------------------------- | -------------- | --------------------- |
+| [[Comcast Modem]]            | 10.1.10.1    | [[Netgate 1100 pfSense Firewall]]       | 10.1.10.35     | Link to outside modem |
+| [[Mikrotik CRS309-1G-8S+IN]] | 192.168.1.10 | [[Netgate 1100 pfSense Firewall]]       | 192.168.1.1    | Link to firewall      |
+| [[Mikrotik CRS309-1G-8S+IN]] | 192.168.5.1  | [[Cisco WS-C3650-48FQ-S Catalyst 3650]] | 192.168.5.2    | Link to lab switch    |
+| [[Mikrotik CRS309-1G-8S+IN]] | 192.168.88.1 | Any PC                                  | 192.168.88.XXX | Management address    |
