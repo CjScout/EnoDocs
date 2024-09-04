@@ -11,3 +11,7 @@ The Show PC is the eye catching computer in the room.
 - MoBo doesn't support this M.2 but it's still installed
 - ASUS ROG Strix X570-E
 - EVGA 650GA 650w 80+ gold
+
+|     |     |
+| --- | --- |
+|     |     |
