@@ -9,6 +9,12 @@
     <toc-element topic="starter-topic.md"/>
     <toc-element topic="About-the-CIS-Program.md"/>
     <toc-element topic="Guides.md">
+        <toc-element topic="CIS-L2-Cisco.md">
+            <toc-element topic="Switch Configuration Reference.md"/>
+            <toc-element topic="Server Configuration.md"/>
+            <toc-element topic="Router Configuration Reference.md"/>
+            <toc-element topic="PC Configuration.md"/>
+        </toc-element>
         <toc-element topic="Virtualization.md">
             <toc-element topic="Proxmox-VM.md"/>
         </toc-element>
