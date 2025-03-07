@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eno Docs]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Eno Docs</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 07 Mar 2025 15:48:44 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 07 Mar 2025 15:48:43 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Router On a Stick]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eno Docs]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Eno Docs</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 07 Mar 2025 15:52:32 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 07 Mar 2025 15:52:32 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Home]]></title><description><![CDATA[ 
+ <br><br>Welcome to the Computer Information System documentation site. Here you can find written explanations for just about anything in the room.<br><br>
+<br><a data-href="Work PCs" href="work-pcs/work-pcs.html" class="internal-link" target="_self" rel="noopener nofollow">Work PCs</a>
+<br><a data-href="Server Overview's" href="servers/server-overview's.html" class="internal-link" target="_self" rel="noopener nofollow">Server Overview's</a>
+<br><a data-href="Network Overview" href="networking-infastructure/network-overview.html" class="internal-link" target="_self" rel="noopener nofollow">Network Overview</a>
+<br><a data-href="Guides" href="guides/guides.html" class="internal-link" target="_self" rel="noopener nofollow">Guides</a>
+<br>Return to <a rel="noopener nofollow" class="external-link" href="https://professoreno.com" target="_blank">https://professoreno.com</a><br><br>(Names redacted for privacy)<br>
+<br>Connor S
+<br>Andrew B
+]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 07 Mar 2025 15:52:27 GMT</pubDate></item><item><title><![CDATA[Router On a Stick]]></title><description><![CDATA[ 
  <br><br>Create VLANS on switchs<br>Configure Global Interface<br>
 <br>int (PORT)
 <br>no shut
@@ -82,7 +91,7 @@ Select Next and then Finish
 <img alt="Pasted image 20250307082255.png" src="lib/media/pasted-image-20250307082255.png">
 <br>Press Start Now and enjoy your VM<br>
 <img alt="Pasted image 20250307082335.png" src="lib/media/pasted-image-20250307082335.png">
-]]></description><link>guides/virtualization/proxmox-vm.html</link><guid isPermaLink="false">Guides/Virtualization/Proxmox-VM.md</guid><pubDate>Fri, 07 Mar 2025 13:23:36 GMT</pubDate><enclosure url="lib/media/pasted-image-20250307081836.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;lib/media/pasted-image-20250307081836.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Virtualization]]></title><description><![CDATA[ 
+]]></description><link>guides/virtualization/proxmox-vm.html</link><guid isPermaLink="false">Guides/Virtualization/Proxmox-VM.md</guid><pubDate>Fri, 07 Mar 2025 13:23:36 GMT</pubDate><enclosure url="lib/media/pasted-image-20250307081836.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/pasted-image-20250307081836.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Virtualization]]></title><description><![CDATA[ 
  <br><br>Virtual machines are basically computers running computers. aka computerception<br>These guides walk you through the different virtual machine types and how to set them up.]]></description><link>guides/virtualization/virtualization-overview.html</link><guid isPermaLink="false">Guides/Virtualization/Virtualization Overview.md</guid><pubDate>Thu, 20 Feb 2025 20:36:30 GMT</pubDate></item><item><title><![CDATA[Guides]]></title><description><![CDATA[ 
  <br><br>A collection of guides for labs and/or room maitanence.<br><br><br><br><br><br>]]></description><link>guides/guides.html</link><guid isPermaLink="false">Guides/Guides.md</guid><pubDate>Fri, 07 Mar 2025 14:54:10 GMT</pubDate></item><item><title><![CDATA[Comcast Modem]]></title><description><![CDATA[ 
  <br><br>The Comcast modem has been reduced to nothing but a modem in bridge mode. It should never need to be touch, but it is accessible at <a rel="noopener nofollow" class="external-link" href="http://10.1.10.1" target="_blank">http://10.1.10.1</a> if needed.]]></description><link>networking-infastructure/comcast-modem.html</link><guid isPermaLink="false">Networking Infastructure/Comcast Modem.md</guid><pubDate>Fri, 21 Feb 2025 02:30:13 GMT</pubDate></item><item><title><![CDATA[Detailed Network Explanation]]></title><description><![CDATA[ 
@@ -137,7 +146,7 @@ Network adapter: TP-Link TX401 10GB PCIe Network Card
 <br><a data-href="Tailscale" href="servers/tailscale.html" class="internal-link" target="_self" rel="noopener nofollow">Tailscale</a> - Remote VPN access/entry point
 <br><a data-href="Uptime" href="servers/uptime.html" class="internal-link" target="_self" rel="noopener nofollow">Uptime</a> - Uptime Kuma docker container for network uptime monitoring
 <br><a data-href="Funion Server" href="servers/funion-server.html" class="internal-link" target="_self" rel="noopener nofollow">Funion Server</a> - Security Onion node for IDS
-]]></description><link>servers/server-overview&apos;s.html</link><guid isPermaLink="false">Servers/Server Overview&apos;s.md</guid><pubDate>Fri, 21 Feb 2025 16:34:33 GMT</pubDate></item><item><title><![CDATA[Tailscale]]></title><description><![CDATA[ 
+]]></description><link>servers/server-overview's.html</link><guid isPermaLink="false">Servers/Server Overview's.md</guid><pubDate>Fri, 21 Feb 2025 16:34:33 GMT</pubDate></item><item><title><![CDATA[Tailscale]]></title><description><![CDATA[ 
  ]]></description><link>servers/tailscale.html</link><guid isPermaLink="false">Servers/Tailscale.md</guid><pubDate>Fri, 21 Feb 2025 02:38:24 GMT</pubDate></item><item><title><![CDATA[Uptime]]></title><description><![CDATA[ 
  <br>The uptime server runs an uptime-kuma docker container. It is accessible at <a rel="noopener nofollow" class="external-link" href="http://192.168.30.11:3001" target="_blank">http://192.168.30.11:3001</a>.<br>It is configured to perform ping tests on the following equipment<br>
 <br>Class Infrastructure
@@ -255,13 +264,4 @@ pause
 <br>3.5mm Combo Jack ×1
 
 
-]]></description><link>work-pcs/work-pcs.html</link><guid isPermaLink="false">Work PCs/Work PCs.md</guid><pubDate>Fri, 21 Feb 2025 02:16:55 GMT</pubDate></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
- <br>Welcome to the Computer Information System documentation site. Here you can find written explanations for just about anything in the room.<br><br>
-<br><a data-href="Work PCs" href="work-pcs/work-pcs.html" class="internal-link" target="_self" rel="noopener nofollow">Work PCs</a>
-<br><a data-href="Server Overview's" href="servers/server-overview's.html" class="internal-link" target="_self" rel="noopener nofollow">Server Overview's</a>
-<br><a data-href="Network Overview" href="networking-infastructure/network-overview.html" class="internal-link" target="_self" rel="noopener nofollow">Network Overview</a>
-<br><a data-href="Guides" href="guides/guides.html" class="internal-link" target="_self" rel="noopener nofollow">Guides</a>
-<br>Return to <a rel="noopener nofollow" class="external-link" href="https://professoreno.com" target="_blank">https://professoreno.com</a><br><br>(Names redacted for privacy)<br>
-<br>Connor S
-<br>Andrew B
-]]></description><link>home.html</link><guid isPermaLink="false">Home.md</guid><pubDate>Fri, 07 Mar 2025 15:47:58 GMT</pubDate></item></channel></rss>
+]]></description><link>work-pcs/work-pcs.html</link><guid isPermaLink="false">Work PCs/Work PCs.md</guid><pubDate>Fri, 21 Feb 2025 02:16:55 GMT</pubDate></item></channel></rss>
