@@ -1,0 +1,1070 @@
+<!DOCTYPE html> <html><head>
+		<title>Cyberdyne</title>
+		<base href="../">
+		<meta id="root-path" root-path="../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="Eno Docs - Cyberdyne">
+		<meta property="og:title" content="Cyberdyne">
+		<meta property="og:description" content="Eno Docs - Cyberdyne">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="servers/cyberdyne.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="Eno Docs">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="Cyberdyne">Cyberdyne</h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-p"><p dir="auto">Cyberdyne is the core of the CIS class. It runs Windows Server 2019, and provides Domain Services to the entire class.</p></div><div class="el-h2 heading-wrapper"><h2 data-heading="Hardware Configuration" dir="auto" class="heading" id="Hardware_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Hardware Configuration</h2><div class="heading-children"><div class="el-p"><p dir="auto">CPU: AMD EPYC 7401P<br>
+RAM: Crucial 64GB (4 x 16GB) DDR4 ECC Registered 2133<br>
+Motherboard: Supermicro H11SSL-i<br>
+GPU: GTX 1650 Low Profile<br>
+PSU: Seasonic PRIME 80+ Titanium 650W<br>
+Case: SilverStone Technology CS380 8-Bay Compact ATX Tower case<br>
+Storage:</p></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto">1x Samsung 980 Pro 1TB</li>
+<li data-line="1" dir="auto">8x Seagate IronWolf Pro 4TB 7200 RPM<br>
+- 2 Hardware RAID 5's of 4 drives each<br>
+- Each RAID 5 is combined into a stripped 22 TB array in windows<br>
+Network adapter: TP-Link TX401 10GB PCIe Network Card</li>
+</ul></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="User Accounts" dir="auto" class="heading" id="User_Accounts"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Accounts</h2><div class="heading-children"><div class="el-p"><p dir="auto">All user accounts are stored on Cyberdyne, and allows a student to log in to their account on any computer enrolled in the domain.</p></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="DNS" dir="auto" class="heading" id="DNS"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>DNS</h2><div class="heading-children"><div class="el-p"><p dir="auto">Cyberdyne also provides domain DNS related services.</p></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Group Policy Overview" dir="auto" class="heading" id="Group_Policy_Overview"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Group Policy Overview</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="Administrator Policy" dir="auto" class="heading" id="Administrator_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrator Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h5><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Desktop/Desktop" dir="auto" class="heading" id="Desktop/Desktop"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Desktop/Desktop</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Desktop Wallpaper</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Wallpaper Path: \cyberdyne\PublicShare\Admin.jpg</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Start Menu and Taskbar" dir="auto" class="heading" id="Start_Menu_and_Taskbar"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Start Menu and Taskbar</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Add the Run command to the Start Menu</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Class PC Policy" dir="auto" class="heading" id="Class_PC_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Class PC Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="Security Settings" dir="auto" class="heading" id="Security_Settings"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Security Settings</h5><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Account Policies/Password Policy" dir="auto" class="heading" id="Account_Policies/Password_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Account Policies/Password Policy</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Enforce password history</td>
+<td dir="ltr">3 passwords remembered</td>
+</tr>
+<tr>
+<td dir="ltr">Maximum password age</td>
+<td dir="ltr">90 days</td>
+</tr>
+<tr>
+<td dir="ltr">Minimum password age</td>
+<td dir="ltr">30 days</td>
+</tr>
+<tr>
+<td dir="ltr">Password must meet complexity requirements</td>
+<td dir="ltr">Enabled</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Account Policies/Account Lockout Policy" dir="auto" class="heading" id="Account_Policies/Account_Lockout_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Account Policies/Account Lockout Policy</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Account lockout duration</td>
+<td dir="ltr">10 minutes</td>
+</tr>
+<tr>
+<td dir="ltr">Account lockout threshold</td>
+<td dir="ltr">5 invalid logon attempts</td>
+</tr>
+<tr>
+<td dir="ltr">Reset account lockout counter after</td>
+<td dir="ltr">10 minutes</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Interactive Logon" dir="auto" class="heading" id="Interactive_Logon"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Interactive Logon</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Interactive logon: Do not require CTRL+ALT+DEL</td>
+<td dir="ltr">Disabled</td>
+</tr>
+<tr>
+<td dir="ltr">Interactive logon: Don't display last signed-in</td>
+<td dir="ltr">Enabled</td>
+</tr>
+<tr>
+<td dir="ltr">Interactive logon: Message text for users attempting to log on</td>
+<td dir="ltr">This computer is for use by the CIS Program, Cybersecurity Program, and Computer Club only.</td>
+</tr>
+<tr>
+<td dir="ltr">Interactive logon: Message title for users attempting to log on</td>
+<td dir="ltr">"Unauthorized Access Prohibited"</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h5><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Control Panel" dir="auto" class="heading" id="Control_Panel"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Control Panel</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Settings Page Visibility</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">showonly:bluetooth,sound,about,windowsupdate,troubleshoot</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Control Panel/Personalization" dir="auto" class="heading" id="Control_Panel/Personalization"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Control Panel/Personalization</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Force a specific default lock screen and logon image</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Image path: \cyberdyne\PublicShare\lockscreen.jpg<br><br>Turn off fun facts, tips, tricks, and more on lock screen: Enabled</td>
+</tr>
+<tr>
+<td dir="ltr">Prevent changing lock screen and logon image</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Network/Network Connections/Windows Defender Firewall/Domain Profile" dir="auto" class="heading" id="Network/Network_Connections/Windows_Defender_Firewall/Domain_Profile"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Network/Network Connections/Windows Defender Firewall/Domain Profile</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Windows Defender Firewall: Allow ICMP exceptions</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Allow outbound destination unreachable: Disabled<br>Allow outbound source quench: Disabled<br>Allow redirect: Disabled<br>Allow inbound echo request: Enabled<br>Allow inbound router request: Disabled<br>Allow outbound time exceeded: Disabled<br>Allow outbound parameter problem: Disabled<br>Allow inbound timestamp request: Disabled<br>Allow inbound mask request: Disabled<br>Allow outbound packet too big: Disabled</td>
+</tr>
+<tr>
+<td dir="ltr">Windows Defender Firewall: Allow inbound remote administration exception</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Start Menu and Taskbar" dir="auto" class="heading" id="Start_Menu_and_Taskbar"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Start Menu and Taskbar</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Remove "Recently added" list from Start Menu</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="System/Power Management" dir="auto" class="heading" id="System/Power_Management"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>System/Power Management</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Select an active power plan</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Active Power Plan: High Performance</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="System/Windows Time Service/Time Providers" dir="auto" class="heading" id="System/Windows_Time_Service/Time_Providers"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>System/Windows Time Service/Time Providers</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Configure Windows NTP Client</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">NtpServer: 129.6.15.28<br>Type: NTP<br>CrossSiteSyncFlags: 2<br>ResolvePeerBackoffMinutes: 15<br>ResolvePeerBackoffMaxTimes: 7<br>SpecialPollInterval: 1024<br>EventLogFlags: 0</td>
+</tr>
+<tr>
+<td dir="ltr">Enable Windows NTP Client</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/AutoPlay Policies" dir="auto" class="heading" id="Windows_Components/AutoPlay_Policies"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/AutoPlay Policies</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Set the default behavior for AutoRun</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Default AutoRun Behavior: Do not execute any autorun commands</td>
+</tr>
+<tr>
+<td dir="ltr">Turn off Autoplay</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Turn off Autoplay on: All drives</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/BitLocker Drive Encryption" dir="auto" class="heading" id="Windows_Components/BitLocker_Drive_Encryption"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/BitLocker Drive Encryption</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Store BitLocker recovery information in Active Directory Domain Services (Windows Server 2008 and Windows Vista)</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Require BitLocker backup to AD DS: Enabled<br>Select BitLocker recovery information to store: Recovery passwords and key packages</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Data Collection and Preview Builds" dir="auto" class="heading" id="Windows_Components/Data_Collection_and_Preview_Builds"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Data Collection and Preview Builds</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow commercial data pipeline</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow Desktop Analytics Processing</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow device name to be sent in Windows diagnostic data</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow Telemetry</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow WUfB Cloud Processing</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Limit Enhanced diagnostic data to the minimum required by Windows Analytics</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Event Log Service/Application" dir="auto" class="heading" id="Windows_Components/Event_Log_Service/Application"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Event Log Service/Application</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Specify the maximum log file size (KB)</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Maximum Log Size (KB): 8192</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Event Log Service/Security" dir="auto" class="heading" id="Windows_Components/Event_Log_Service/Security"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Event Log Service/Security</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Specify the maximum log file size (KB)</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Maximum Log Size (KB): 40960</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Event Log Service/Setup" dir="auto" class="heading" id="Windows_Components/Event_Log_Service/Setup"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Event Log Service/Setup</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Specify the maximum log file size (KB)</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Maximum Log Size (KB): 8192</td>
+</tr>
+<tr>
+<td dir="ltr">Turn on logging</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Event Log Service/System" dir="auto" class="heading" id="Windows_Components/Event_Log_Service/System"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Event Log Service/System</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Specify the maximum log file size (KB)</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Maximum Log Size (KB): 8192</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Find My Device" dir="auto" class="heading" id="Windows_Components/Find_My_Device"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Find My Device</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Turn On/Off Find My Device</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Location and Sensors" dir="auto" class="heading" id="Windows_Components/Location_and_Sensors"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Location and Sensors</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Turn off location</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/OneDrive" dir="auto" class="heading" id="Windows_Components/OneDrive"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/OneDrive</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Prevent the usage of OneDrive for file storage</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections" dir="auto" class="heading" id="Windows_Components/Remote_Desktop_Services/Remote_Desktop_Session_Host/Connections"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow users to connect remotely by using Remote Desktop Services</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Search" dir="auto" class="heading" id="Windows_Components/Search"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Search</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow Cloud Search</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow Cortana</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow Cortana above lock screen</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow Cortana Page in OOBE on an AAD account</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Allow search and Cortana to use location</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Do not allow web search</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Don't search the web or display web results in Search</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Store" dir="auto" class="heading" id="Windows_Components/Store"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Store</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Turn off the offer to update to the latest version of Windows</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Text Input" dir="auto" class="heading" id="Windows_Components/Text_Input"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Text Input</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow uninstallation of language features when a language is uninstalled</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Improve inking and typing recognition</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Color System" dir="auto" class="heading" id="Windows_Components/Windows_Color_System"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Color System</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Prohibit installing or uninstalling color profiles</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Defender SmartScreen/Explorer" dir="auto" class="heading" id="Windows_Components/Windows_Defender_SmartScreen/Explorer"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Defender SmartScreen/Explorer</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Configure Windows Defender SmartScreen</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Level: Warn</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Defender SmartScreen/Microsoft Edge" dir="auto" class="heading" id="Windows_Components/Windows_Defender_SmartScreen/Microsoft_Edge"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Defender SmartScreen/Microsoft Edge</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Configure Windows Defender SmartScreen</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Remote Shell" dir="auto" class="heading" id="Windows_Components/Windows_Remote_Shell"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Remote Shell</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow Remote Shell Access</td>
+<td dir="ltr">Disabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Security/App and browser protection" dir="auto" class="heading" id="Windows_Components/Windows_Security/App_and_browser_protection"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Security/App and browser protection</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Prevent users from modifying settings</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Security/Family options" dir="auto" class="heading" id="Windows_Components/Windows_Security/Family_options"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Security/Family options</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Hide the Family options area</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Security/Systray" dir="auto" class="heading" id="Windows_Components/Windows_Security/Systray"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Security/Systray</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Hide Windows Security Systray</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Security/Virus and threat protection" dir="auto" class="heading" id="Windows_Components/Windows_Security/Virus_and_threat_protection"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Security/Virus and threat protection</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Hide the Ransomware data recovery area</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Hide the Virus and threat protection area</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Update" dir="auto" class="heading" id="Windows_Components/Windows_Update"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Update</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Configure Automatic Updates</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Configure automatic updating: 4 - Auto download and schedule the install<br>Install during automatic maintenance: Disabled<br>Scheduled install day: 0 - Every day<br>Scheduled install time: 03:00<br>Every week: Enabled<br>First week of the month: Disabled<br>Second week of the month: Disabled<br>Third week of the month: Disabled<br>Fourth week of the month: Disabled<br>Install updates for other Microsoft products: Enabled</td>
+</tr>
+<tr>
+<td dir="ltr">Specify deadline before auto-restart for update installation</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Quality Updates (days): 7<br>Feature Updates (days): 7</td>
+</tr>
+<tr>
+<td dir="ltr">Specify deadlines for automatic updates and restarts</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Quality Updates<br>Deadline (days): 7<br>Grace period (days): 2<br><br>Feature Updates<br>Deadline (days): 2<br>Grace Period (days): 7<br><br>Don't auto-restart until end of grace period: Yes</td>
+</tr>
+<tr>
+<td dir="ltr">Turn off auto-restart for updates during active hours</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Active Hours<br>Start: 6 AM<br>End: 5 PM</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="Control Panel Settings" dir="auto" class="heading" id="Control_Panel_Settings"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Control Panel Settings</h5><div class="heading-children"></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="Scheduled Tasks" dir="auto" class="heading" id="Scheduled_Tasks"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Scheduled Tasks</h5><div class="heading-children"><div class="el-p"><p dir="auto">Scheduled Task (At least Windows 7): auto_shutdown</p></div><div class="el-p"><p dir="auto"><strong>Task</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Name</th>
+<th dir="ltr">auto_shutdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Author</td>
+<td dir="ltr">SKYNET\cschuler</td>
+</tr>
+<tr>
+<td dir="ltr">Description</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Run only when user is logged on</td>
+<td dir="ltr">S4U</td>
+</tr>
+<tr>
+<td dir="ltr">UserId</td>
+<td dir="ltr">System</td>
+</tr>
+<tr>
+<td dir="ltr">Run with highest privileges</td>
+<td dir="ltr">LeastPrivilege</td>
+</tr>
+<tr>
+<td dir="ltr">Hidden</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Configure for</td>
+<td dir="auto">1.2</td>
+</tr>
+<tr>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Yes</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>Triggers</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">1. Daily</th>
+<th dir="auto"></th>
+<th dir="auto"></th>
+<th dir="auto"></th>
+<th dir="auto"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto"></td>
+<td dir="ltr">Activate</td>
+<td dir="ltr">2/20/2025 2:30:00 PM</td>
+<td dir="ltr">Synchronize across time zones</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="auto"></td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Yes</td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="auto"></td>
+<td dir="ltr">Recur every 1 days</td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>Actions</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">1. Start a program</th>
+<th dir="auto"></th>
+<th dir="auto"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto"></td>
+<td dir="ltr">Program/script</td>
+<td dir="ltr">C:\Windows\System32\shutdown.exe</td>
+</tr>
+<tr>
+<td dir="auto"></td>
+<td dir="ltr">Arguments</td>
+<td dir="ltr">/s /t 0</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>Settings</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Start the task only if the computer is idle for</th>
+<th dir="ltr">15 minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Wait for idle for</td>
+<td dir="ltr">2 hours</td>
+</tr>
+<tr>
+<td dir="ltr">Stop if the computer ceases to be idle</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Restart if the idle state resumes</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Start the task only if the computer is on AC power</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Stop if the computer switches to battery power</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Allow task to be run on demand</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Stop task if it runs longer than</td>
+<td dir="ltr">Immediately</td>
+</tr>
+<tr>
+<td dir="ltr">If the running task does not end when requested, force it to stop</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">If the task is already running, then the following rule applies</td>
+<td dir="ltr">IgnoreNew</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>Options</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Stop processing items on this extension if an error occurs on this item</th>
+<th dir="ltr">No</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Run in logged-on user's security context (user policy option)</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Remove this item when it is no longer applied</td>
+<td dir="ltr">No</td>
+</tr>
+<tr>
+<td dir="ltr">Apply once and do not reapply</td>
+<td dir="ltr">No</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Default Domain Controller Policy" dir="auto" class="heading" id="Default_Domain_Controller_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Default Domain Controller Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="System/Windows Time Service/Time Providers" dir="auto" class="heading" id="System/Windows_Time_Service/Time_Providers"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>System/Windows Time Service/Time Providers</h5><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Configure Windows NTP Client</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">NtpServer: 129.6.15.28<br>Type: NT5DS<br>CrossSiteSyncFlags: 2<br>ResolvePeerBackoffMinutes: 15<br>ResolvePeerBackoffMaxTimes: 7<br>SpecialPollInterval: 1024<br>EventLogFlags: 0</td>
+</tr>
+<tr>
+<td dir="ltr">Enable Windows NTP Client</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Default Domain Policy" dir="auto" class="heading" id="Default_Domain_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Default Domain Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="Security Settings" dir="auto" class="heading" id="Security_Settings"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Security Settings</h5><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Account Policies/Password Policy" dir="auto" class="heading" id="Account_Policies/Password_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Account Policies/Password Policy</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Enforce password history</td>
+<td dir="ltr">24 passwords remembered</td>
+</tr>
+<tr>
+<td dir="ltr">Maximum password age</td>
+<td dir="ltr">90 days</td>
+</tr>
+<tr>
+<td dir="ltr">Minimum password age</td>
+<td dir="ltr">1 days</td>
+</tr>
+<tr>
+<td dir="ltr">Minimum password length</td>
+<td dir="ltr">7 characters</td>
+</tr>
+<tr>
+<td dir="ltr">Password must meet complexity requirements</td>
+<td dir="ltr">Enabled</td>
+</tr>
+<tr>
+<td dir="ltr">Store passwords using reversible encryption</td>
+<td dir="ltr">Disabled</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Account Policies/Account Lockout Policy" dir="auto" class="heading" id="Account_Policies/Account_Lockout_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Account Policies/Account Lockout Policy</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Account lockout duration</td>
+<td dir="ltr">10 minutes</td>
+</tr>
+<tr>
+<td dir="ltr">Account lockout threshold</td>
+<td dir="ltr">5 invalid logon attempts</td>
+</tr>
+<tr>
+<td dir="ltr">Allow administrator account lockout</td>
+<td dir="ltr">Enabled</td>
+</tr>
+<tr>
+<td dir="ltr">Reset account lockout counter after</td>
+<td dir="ltr">10 minutes</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div><div class="el-h5 heading-wrapper"><h5 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h5><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="System/Group Policy" dir="auto" class="heading" id="System/Group_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>System/Group Policy</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Set Group Policy refresh interval for computers</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Interval: 15 min<br>Random Buffer: 5 min</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="System/Windows Time Service/Time Providers" dir="auto" class="heading" id="System/Windows_Time_Service/Time_Providers"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>System/Windows Time Service/Time Providers</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Configure Windows NTP Client</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">NtpServer: 129.6.15.28<br>Type: NT5DS<br>CrossSiteSyncFlags: 2<br>ResolvePeerBackoffMinutes: 15<br>ResolvePeerBackoffMaxTimes: 7<br>SpecialPollInterval: 1024<br>EventLogFlags: 0</td>
+</tr>
+<tr>
+<td dir="ltr">Enable Windows NTP Client</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections" dir="auto" class="heading" id="Windows_Components/Remote_Desktop_Services/Remote_Desktop_Session_Host/Connections"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow users to connect remotely by using Remote Desktop Services</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Limit number of connections</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">RD Maximum Connections allowed: 1</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Remote Desktop Services/Remote Desktop Session Host/Session Time Limits" dir="auto" class="heading" id="Windows_Components/Remote_Desktop_Services/Remote_Desktop_Session_Host/Session_Time_Limits"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Remote Desktop Services/Remote Desktop Session Host/Session Time Limits</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">End session when time limits are reached</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Set time limit for active but idle Remote Desktop Services sessions</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Idle session limit: 15 minutes</td>
+</tr>
+<tr>
+<td dir="ltr">Set time limit for active Remote Desktop Services sessions</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Active session limit: 1 hour</td>
+</tr>
+<tr>
+<td dir="ltr">Set time limit for disconnected sessions</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">End a disconnected session: 5 minutes</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Windows Components/Windows Remote Management (WinRM)/WinRM Service" dir="auto" class="heading" id="Windows_Components/Windows_Remote_Management_(WinRM)/WinRM_Service"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Windows Components/Windows Remote Management (WinRM)/WinRM Service</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Allow remote server management through WinRM</td>
+<td dir="ltr">Enabled</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Guest Policy" dir="auto" class="heading" id="Guest_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Guest Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-h5 heading-wrapper"><h5 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h5><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Desktop/Desktop" dir="auto" class="heading" id="Desktop/Desktop"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Desktop/Desktop</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Desktop Wallpaper</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Wallpaper Path: \cyberdyne\PublicShare\Guest.jpg</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Level 1 Policy" dir="auto" class="heading" id="Level_1_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Level 1 Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h6><div class="heading-children"></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Desktop/Desktop" dir="auto" class="heading" id="Desktop/Desktop"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Desktop/Desktop</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Desktop Wallpaper</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Wallpaper Path: \cyberdyne\PublicShare\L1.jpg</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Level 2 Policy" dir="auto" class="heading" id="Level_2_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Level 2 Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h6><div class="heading-children"></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Desktop/Desktop" dir="auto" class="heading" id="Desktop/Desktop"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Desktop/Desktop</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Desktop Wallpaper</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Wallpaper Path: \cyberdyne\PublicShare\L2.jpg</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Level 3 Policy" dir="auto" class="heading" id="Level_3_Policy"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Level 3 Policy</h3><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="Computer Configuration" dir="auto" class="heading" id="Computer_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Computer Configuration</h4><div class="heading-children"><div class="el-p"><p dir="auto">No settings defined.</p></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="User Configuration" dir="auto" class="heading" id="User_Configuration"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>User Configuration</h4><div class="heading-children"><div class="el-h6 heading-wrapper"><h6 data-heading="Administrative Templates" dir="auto" class="heading" id="Administrative_Templates"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Administrative Templates</h6><div class="heading-children"></div></div><div class="el-h6 heading-wrapper"><h6 data-heading="Desktop/Desktop" dir="auto" class="heading" id="Desktop/Desktop"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Desktop/Desktop</h6><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Policy</th>
+<th dir="ltr">Setting</th>
+<th dir="ltr">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Desktop Wallpaper</td>
+<td dir="ltr">Enabled</td>
+<td dir="ltr">Wallpaper Path: \cyberdyne\PublicShare\L3.jpg</td>
+</tr>
+</tbody>
+</table></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="servers/cyberdyne.html#Cyberdyne"><div class="tree-item-contents heading-link" heading-name="Cyberdyne"><span class="tree-item-title">Cyberdyne</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="servers/cyberdyne.html#Hardware_Configuration"><div class="tree-item-contents heading-link" heading-name="Hardware Configuration"><span class="tree-item-title">Hardware Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="servers/cyberdyne.html#User_Accounts"><div class="tree-item-contents heading-link" heading-name="User Accounts"><span class="tree-item-title">User Accounts</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="servers/cyberdyne.html#DNS"><div class="tree-item-contents heading-link" heading-name="DNS"><span class="tree-item-title">DNS</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="servers/cyberdyne.html#Group_Policy_Overview"><div class="tree-item-contents heading-link" heading-name="Group Policy Overview"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Group Policy Overview</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Administrator_Policy"><div class="tree-item-contents heading-link" heading-name="Administrator Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Administrator Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Desktop/Desktop"><div class="tree-item-contents heading-link" heading-name="Desktop/Desktop"><span class="tree-item-title">Desktop/Desktop</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Start_Menu_and_Taskbar"><div class="tree-item-contents heading-link" heading-name="Start Menu and Taskbar"><span class="tree-item-title">Start Menu and Taskbar</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Class_PC_Policy"><div class="tree-item-contents heading-link" heading-name="Class PC Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Class PC Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Security_Settings"><div class="tree-item-contents heading-link" heading-name="Security Settings"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Security Settings</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Account_Policies/Password_Policy"><div class="tree-item-contents heading-link" heading-name="Account Policies/Password Policy"><span class="tree-item-title">Account Policies/Password Policy</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Account_Policies/Account_Lockout_Policy"><div class="tree-item-contents heading-link" heading-name="Account Policies/Account Lockout Policy"><span class="tree-item-title">Account Policies/Account Lockout Policy</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Interactive_Logon"><div class="tree-item-contents heading-link" heading-name="Interactive Logon"><span class="tree-item-title">Interactive Logon</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Control_Panel"><div class="tree-item-contents heading-link" heading-name="Control Panel"><span class="tree-item-title">Control Panel</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Control_Panel/Personalization"><div class="tree-item-contents heading-link" heading-name="Control Panel/Personalization"><span class="tree-item-title">Control Panel/Personalization</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Network/Network_Connections/Windows_Defender_Firewall/Domain_Profile"><div class="tree-item-contents heading-link" heading-name="Network/Network Connections/Windows Defender Firewall/Domain Profile"><span class="tree-item-title">Network/Network Connections/Windows Defender Firewall/Domain Profile</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Start_Menu_and_Taskbar"><div class="tree-item-contents heading-link" heading-name="Start Menu and Taskbar"><span class="tree-item-title">Start Menu and Taskbar</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#System/Power_Management"><div class="tree-item-contents heading-link" heading-name="System/Power Management"><span class="tree-item-title">System/Power Management</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#System/Windows_Time_Service/Time_Providers"><div class="tree-item-contents heading-link" heading-name="System/Windows Time Service/Time Providers"><span class="tree-item-title">System/Windows Time Service/Time Providers</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/AutoPlay_Policies"><div class="tree-item-contents heading-link" heading-name="Windows Components/AutoPlay Policies"><span class="tree-item-title">Windows Components/AutoPlay Policies</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/BitLocker_Drive_Encryption"><div class="tree-item-contents heading-link" heading-name="Windows Components/BitLocker Drive Encryption"><span class="tree-item-title">Windows Components/BitLocker Drive Encryption</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Data_Collection_and_Preview_Builds"><div class="tree-item-contents heading-link" heading-name="Windows Components/Data Collection and Preview Builds"><span class="tree-item-title">Windows Components/Data Collection and Preview Builds</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Event_Log_Service/Application"><div class="tree-item-contents heading-link" heading-name="Windows Components/Event Log Service/Application"><span class="tree-item-title">Windows Components/Event Log Service/Application</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Event_Log_Service/Security"><div class="tree-item-contents heading-link" heading-name="Windows Components/Event Log Service/Security"><span class="tree-item-title">Windows Components/Event Log Service/Security</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Event_Log_Service/Setup"><div class="tree-item-contents heading-link" heading-name="Windows Components/Event Log Service/Setup"><span class="tree-item-title">Windows Components/Event Log Service/Setup</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Event_Log_Service/System"><div class="tree-item-contents heading-link" heading-name="Windows Components/Event Log Service/System"><span class="tree-item-title">Windows Components/Event Log Service/System</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Find_My_Device"><div class="tree-item-contents heading-link" heading-name="Windows Components/Find My Device"><span class="tree-item-title">Windows Components/Find My Device</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Location_and_Sensors"><div class="tree-item-contents heading-link" heading-name="Windows Components/Location and Sensors"><span class="tree-item-title">Windows Components/Location and Sensors</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/OneDrive"><div class="tree-item-contents heading-link" heading-name="Windows Components/OneDrive"><span class="tree-item-title">Windows Components/OneDrive</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Remote_Desktop_Services/Remote_Desktop_Session_Host/Connections"><div class="tree-item-contents heading-link" heading-name="Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections"><span class="tree-item-title">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Search"><div class="tree-item-contents heading-link" heading-name="Windows Components/Search"><span class="tree-item-title">Windows Components/Search</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Store"><div class="tree-item-contents heading-link" heading-name="Windows Components/Store"><span class="tree-item-title">Windows Components/Store</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Text_Input"><div class="tree-item-contents heading-link" heading-name="Windows Components/Text Input"><span class="tree-item-title">Windows Components/Text Input</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Color_System"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Color System"><span class="tree-item-title">Windows Components/Windows Color System</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Defender_SmartScreen/Explorer"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Defender SmartScreen/Explorer"><span class="tree-item-title">Windows Components/Windows Defender SmartScreen/Explorer</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Defender_SmartScreen/Microsoft_Edge"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Defender SmartScreen/Microsoft Edge"><span class="tree-item-title">Windows Components/Windows Defender SmartScreen/Microsoft Edge</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Remote_Shell"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Remote Shell"><span class="tree-item-title">Windows Components/Windows Remote Shell</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Security/App_and_browser_protection"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Security/App and browser protection"><span class="tree-item-title">Windows Components/Windows Security/App and browser protection</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Security/Family_options"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Security/Family options"><span class="tree-item-title">Windows Components/Windows Security/Family options</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Security/Systray"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Security/Systray"><span class="tree-item-title">Windows Components/Windows Security/Systray</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Security/Virus_and_threat_protection"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Security/Virus and threat protection"><span class="tree-item-title">Windows Components/Windows Security/Virus and threat protection</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Update"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Update"><span class="tree-item-title">Windows Components/Windows Update</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Control_Panel_Settings"><div class="tree-item-contents heading-link" heading-name="Control Panel Settings"><span class="tree-item-title">Control Panel Settings</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Scheduled_Tasks"><div class="tree-item-contents heading-link" heading-name="Scheduled Tasks"><span class="tree-item-title">Scheduled Tasks</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Default_Domain_Controller_Policy"><div class="tree-item-contents heading-link" heading-name="Default Domain Controller Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Default Domain Controller Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#System/Windows_Time_Service/Time_Providers"><div class="tree-item-contents heading-link" heading-name="System/Windows Time Service/Time Providers"><span class="tree-item-title">System/Windows Time Service/Time Providers</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Default_Domain_Policy"><div class="tree-item-contents heading-link" heading-name="Default Domain Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Default Domain Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Security_Settings"><div class="tree-item-contents heading-link" heading-name="Security Settings"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Security Settings</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Account_Policies/Password_Policy"><div class="tree-item-contents heading-link" heading-name="Account Policies/Password Policy"><span class="tree-item-title">Account Policies/Password Policy</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Account_Policies/Account_Lockout_Policy"><div class="tree-item-contents heading-link" heading-name="Account Policies/Account Lockout Policy"><span class="tree-item-title">Account Policies/Account Lockout Policy</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#System/Group_Policy"><div class="tree-item-contents heading-link" heading-name="System/Group Policy"><span class="tree-item-title">System/Group Policy</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#System/Windows_Time_Service/Time_Providers"><div class="tree-item-contents heading-link" heading-name="System/Windows Time Service/Time Providers"><span class="tree-item-title">System/Windows Time Service/Time Providers</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Remote_Desktop_Services/Remote_Desktop_Session_Host/Connections"><div class="tree-item-contents heading-link" heading-name="Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections"><span class="tree-item-title">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Remote_Desktop_Services/Remote_Desktop_Session_Host/Session_Time_Limits"><div class="tree-item-contents heading-link" heading-name="Windows Components/Remote Desktop Services/Remote Desktop Session Host/Session Time Limits"><span class="tree-item-title">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Session Time Limits</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Windows_Components/Windows_Remote_Management_(WinRM)/WinRM_Service"><div class="tree-item-contents heading-link" heading-name="Windows Components/Windows Remote Management (WinRM)/WinRM Service"><span class="tree-item-title">Windows Components/Windows Remote Management (WinRM)/WinRM Service</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Guest_Policy"><div class="tree-item-contents heading-link" heading-name="Guest Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Guest Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="5"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Desktop/Desktop"><div class="tree-item-contents heading-link" heading-name="Desktop/Desktop"><span class="tree-item-title">Desktop/Desktop</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Level_1_Policy"><div class="tree-item-contents heading-link" heading-name="Level 1 Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Level 1 Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Desktop/Desktop"><div class="tree-item-contents heading-link" heading-name="Desktop/Desktop"><span class="tree-item-title">Desktop/Desktop</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Level_2_Policy"><div class="tree-item-contents heading-link" heading-name="Level 2 Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Level 2 Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Desktop/Desktop"><div class="tree-item-contents heading-link" heading-name="Desktop/Desktop"><span class="tree-item-title">Desktop/Desktop</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="servers/cyberdyne.html#Level_3_Policy"><div class="tree-item-contents heading-link" heading-name="Level 3 Policy"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Level 3 Policy</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#Computer_Configuration"><div class="tree-item-contents heading-link" heading-name="Computer Configuration"><span class="tree-item-title">Computer Configuration</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="4"><a class="tree-link" href="servers/cyberdyne.html#User_Configuration"><div class="tree-item-contents heading-link" heading-name="User Configuration"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">User Configuration</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Administrative_Templates"><div class="tree-item-contents heading-link" heading-name="Administrative Templates"><span class="tree-item-title">Administrative Templates</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="servers/cyberdyne.html#Desktop/Desktop"><div class="tree-item-contents heading-link" heading-name="Desktop/Desktop"><span class="tree-item-title">Desktop/Desktop</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
