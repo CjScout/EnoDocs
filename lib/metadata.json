@@ -1,6 +1,6 @@
 {
   "vaultName": "Eno Docs",
-  "lastExport": 1741362752800,
+  "lastExport": 1742921175772,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -19,6 +19,18 @@
     "assets (no useful content here)/Pasted image 20250307082219.png",
     "assets (no useful content here)/Pasted image 20250307082255.png",
     "assets (no useful content here)/Pasted image 20250307082335.png",
+    "Guides/CyberChallenge/Introduction.md",
+    "Guides/CyberChallenge/Stop 1.md",
+    "Guides/CyberChallenge/Stop 2.md",
+    "Guides/CyberChallenge/Stop 3.md",
+    "Guides/CyberChallenge/Stop 4.md",
+    "Guides/CyberChallenge/Stop 5.md",
+    "Guides/CyberChallenge/Stop 6.md",
+    "Guides/CyberChallenge/Stop 7.md",
+    "Guides/CyberChallenge/Stop 8.md",
+    "Guides/CyberChallenge/Stop 9.md",
+    "Guides/CyberChallenge/Stop 10.md",
+    "Guides/CyberChallenge/zSolutions.md",
     "Guides/Networking Configuration/Router Configuration Reference.md",
     "Guides/Networking Configuration/Switch Configuration Reference.md",
     "Guides/Virtualization/Proxmox-VM.md",
@@ -40,6 +52,18 @@
     "Work PCs/Programs.md",
     "Work PCs/Work PCs.md",
     "index.md",
+    "lib/media/pasted-image-20250307081836.png",
+    "lib/media/pasted-image-20250221133111.png",
+    "lib/media/pasted-image-20250221133150.png",
+    "lib/media/pasted-image-20250221133209.png",
+    "lib/media/pasted-image-20250221133242.png",
+    "lib/media/pasted-image-20250221133546.png",
+    "lib/media/pasted-image-20250221133616.png",
+    "lib/media/pasted-image-20250221133638.png",
+    "lib/media/pasted-image-20250307082042.png",
+    "lib/media/pasted-image-20250307082219.png",
+    "lib/media/pasted-image-20250307082255.png",
+    "lib/media/pasted-image-20250307082335.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -67,19 +91,7 @@
     "lib/scripts/graph-data.js",
     "lib/styles/obsidian.css",
     "lib/styles/global-variable-styles.css",
-    "lib/styles/main-styles.css",
-    "lib/media/pasted-image-20250307081836.png",
-    "lib/media/pasted-image-20250221133111.png",
-    "lib/media/pasted-image-20250221133150.png",
-    "lib/media/pasted-image-20250221133209.png",
-    "lib/media/pasted-image-20250221133242.png",
-    "lib/media/pasted-image-20250221133546.png",
-    "lib/media/pasted-image-20250221133616.png",
-    "lib/media/pasted-image-20250221133638.png",
-    "lib/media/pasted-image-20250307082042.png",
-    "lib/media/pasted-image-20250307082219.png",
-    "lib/media/pasted-image-20250307082255.png",
-    "lib/media/pasted-image-20250307082335.png"
+    "lib/styles/main-styles.css"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -191,20 +203,20 @@
       "dependencies": []
     },
     "Guides/Networking Configuration/Router Configuration Reference.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 232,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 272,
       "exportedPath": "guides/networking-configuration/router-configuration-reference.html",
       "dependencies": []
     },
     "Guides/Networking Configuration/Switch Configuration Reference.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 282,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 322,
       "exportedPath": "guides/networking-configuration/switch-configuration-reference.html",
       "dependencies": []
     },
     "Guides/Virtualization/Proxmox-VM.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 1962,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 1901,
       "exportedPath": "guides/virtualization/proxmox-vm.html",
       "dependencies": [
         "lib/media/pasted-image-20250307081836.png",
@@ -222,351 +234,423 @@
       ]
     },
     "Guides/Virtualization/Virtualization Overview.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 189,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 218,
       "exportedPath": "guides/virtualization/virtualization-overview.html",
       "dependencies": []
     },
     "Guides/Guides.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 240,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 280,
       "exportedPath": "guides/guides.html",
       "dependencies": []
     },
     "Networking Infastructure/Comcast Modem.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 176,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 205,
       "exportedPath": "networking-infastructure/comcast-modem.html",
       "dependencies": []
     },
     "Networking Infastructure/Detailed Network Explanation.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 2057,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 2086,
       "exportedPath": "networking-infastructure/detailed-network-explanation.html",
       "dependencies": []
     },
     "Networking Infastructure/Mikrotik L3 Core Switch.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 47,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 76,
       "exportedPath": "networking-infastructure/mikrotik-l3-core-switch.html",
       "dependencies": []
     },
     "Networking Infastructure/Netgate Firewall.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 43,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 72,
       "exportedPath": "networking-infastructure/netgate-firewall.html",
       "dependencies": []
     },
     "Networking Infastructure/Network Overview.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 617,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 646,
       "exportedPath": "networking-infastructure/network-overview.html",
       "dependencies": []
     },
     "Servers/Cloud9.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 623,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 652,
       "exportedPath": "servers/cloud9.html",
       "dependencies": []
     },
     "Servers/Cyberdyne.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 30128,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 30157,
       "exportedPath": "servers/cyberdyne.html",
       "dependencies": []
     },
     "Servers/Funion Server.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 0,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 28,
       "exportedPath": "servers/funion-server.html",
       "dependencies": []
     },
     "Servers/Hampstead.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 9,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 97,
       "exportedPath": "servers/hampstead.html",
       "dependencies": []
     },
     "Servers/Kronos.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 165,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 172,
       "exportedPath": "servers/kronos.html",
       "dependencies": []
     },
     "Servers/Server Overview's.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 437,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 466,
       "exportedPath": "servers/server-overview's.html",
       "dependencies": []
     },
     "Servers/Tailscale.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 0,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 28,
       "exportedPath": "servers/tailscale.html",
       "dependencies": []
     },
     "Servers/Uptime.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 530,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 559,
       "exportedPath": "servers/uptime.html",
       "dependencies": []
     },
     "Work PCs/Programs.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 1987,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 1951,
       "exportedPath": "work-pcs/programs.html",
       "dependencies": []
     },
     "Work PCs/Work PCs.md": {
-      "modifiedTime": 1741362523196,
-      "sourceSize": 584,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 547,
       "exportedPath": "work-pcs/work-pcs.html",
       "dependencies": []
     },
     "lib/media/pasted-image-20250307081836.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 35859,
       "exportedPath": "lib/media/pasted-image-20250307081836.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133111.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 18883,
       "exportedPath": "lib/media/pasted-image-20250221133111.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133150.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 46813,
       "exportedPath": "lib/media/pasted-image-20250221133150.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133209.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 66649,
       "exportedPath": "lib/media/pasted-image-20250221133209.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133242.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 77952,
       "exportedPath": "lib/media/pasted-image-20250221133242.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133546.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 65769,
       "exportedPath": "lib/media/pasted-image-20250221133546.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133616.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 42687,
       "exportedPath": "lib/media/pasted-image-20250221133616.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221133638.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 37245,
       "exportedPath": "lib/media/pasted-image-20250221133638.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250307082042.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 21143,
       "exportedPath": "lib/media/pasted-image-20250307082042.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250307082219.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 12700,
       "exportedPath": "lib/media/pasted-image-20250307082219.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250307082255.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 107748,
       "exportedPath": "lib/media/pasted-image-20250307082255.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250307082335.png": {
-      "modifiedTime": 1741362523196,
+      "modifiedTime": 1742921175772,
       "sourceSize": 13747,
       "exportedPath": "lib/media/pasted-image-20250307082335.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1741362752800,
-      "sourceSize": 17562,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 22138,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1741362752800,
-      "sourceSize": 1860,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 2477,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 137466,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1741362752800,
+      "modifiedTime": 1742921175772,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "index.md": {
-      "modifiedTime": 1741362752800,
-      "sourceSize": 358,
+      "modifiedTime": 1742921175772,
+      "sourceSize": 365,
       "exportedPath": "index.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Introduction.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 683,
+      "exportedPath": "guides/cyberchallenge/introduction.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 1.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 273,
+      "exportedPath": "guides/cyberchallenge/stop-1.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 2.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 197,
+      "exportedPath": "guides/cyberchallenge/stop-2.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 3.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 146,
+      "exportedPath": "guides/cyberchallenge/stop-3.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 4.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 152,
+      "exportedPath": "guides/cyberchallenge/stop-4.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 5.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 180,
+      "exportedPath": "guides/cyberchallenge/stop-5.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 6.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 406,
+      "exportedPath": "guides/cyberchallenge/stop-6.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 7.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 147,
+      "exportedPath": "guides/cyberchallenge/stop-7.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 8.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 151,
+      "exportedPath": "guides/cyberchallenge/stop-8.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 9.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 245,
+      "exportedPath": "guides/cyberchallenge/stop-9.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/Stop 10.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 188,
+      "exportedPath": "guides/cyberchallenge/stop-10.html",
+      "dependencies": []
+    },
+    "Guides/CyberChallenge/zSolutions.md": {
+      "modifiedTime": 1742921175772,
+      "sourceSize": 966,
+      "exportedPath": "guides/cyberchallenge/zsolutions.html",
       "dependencies": []
     }
   }
